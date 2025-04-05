@@ -1,0 +1,59 @@
+/* Preview Container */
+.preview-container {
+  background-color: #ffffff;
+  border: 2px solid #007bff; /* Blue border for emphasis */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.1);
+}
+
+/* Header Styling */
+.preview-container h4 {
+  margin-bottom: 20px;
+  color: #007bff;
+  text-align: center;
+}
+
+/* Form Layout */
+.preview-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Equal spacing between fields */
+}
+
+/* Form Group Styling */
+.preview-form .form-group {
+  margin-bottom: 0; /* Flex gap handles spacing */
+}
+
+/* Label Styling */
+.preview-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input, Select, and DatePicker Styling */
+.preview-form input,
+.preview-form select,
+.preview-form .react-datepicker-wrapper input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+.preview-form input:focus,
+.preview-form select:focus,
+.preview-form .react-datepicker-wrapper input:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+/* Custom styling for checkboxes and radios to scale them down */
+.custom-check,
+.custom-radio {
+  transform: scale(0.8);
+  margin-right: 0.2rem; /* A little spacing after the checkbox/radio */
+}

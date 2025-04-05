@@ -1,0 +1,58 @@
+.field-editor-container {
+    background-color: #fff;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  }
+  
+  .field-editor-container h5 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #007bff;
+  }
+  
+  .field-editor-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .field-editor-form .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .field-editor-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .field-editor-form .form-control {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.2s ease;
+  }
+  
+  .field-editor-form .form-control:focus {
+    border-color: #80bdff;
+    outline: none;
+  }
+  
+  .editor-buttons {
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  /* Add a gap between any two buttons inside the editor-buttons container */
+  .editor-buttons button + button {
+    margin-left: 10px; /* Adjust this value as needed */
+  }
+  
+  .editor-buttons .btn {
+    min-width: 100px;
+  }
+  

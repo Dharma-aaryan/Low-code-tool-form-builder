@@ -1,0 +1,119 @@
+/* Global Reset (optional) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Slightly darker for emphasis */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  animation: fadeIn 0.4s ease;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.4s ease;
+}
+
+/* Modal Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideIn {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Add New Row Modal Form Styling */
+.add-new-row {
+  background: #fafafa;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+/* Use flexbox for a clean one-line layout with gaps */
+.form-row.add-new-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Ensure each form group adapts nicely */
+.form-row.add-new-row .form-group {
+  flex: 1 1 100px; /* Minimum width for each input, adjust as needed */
+}
+
+/* Inputs, Selects, and Date Pickers */
+.add-new-row input,
+.add-new-row select,
+.add-new-row .react-datepicker-wrapper {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+.add-new-row input:focus,
+.add-new-row select:focus,
+.add-new-row .react-datepicker-wrapper input:focus {
+  border-color: #80bdff;
+  outline: none;
+}
+
+/* Table Header Adjustments */
+.table thead th {
+  background: #343a40;
+  color: #fff;
+  text-align: center;
+}
+
+/* Table Cells */
+.table td {
+  vertical-align: middle;
+}
+
+/* Buttons – adding clear spacing and soft hover effects */
+.btn {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn + .btn {
+  margin-left: 0.5rem;
+}
+
+/* Increase the spacing for toggle columns section */
+.form-check-inline + .form-check-inline {
+  margin-left: 1rem;
+}
+
+/* Additional styling for the DataGrid container (optional) */
+.container.mt-4 {
+  max-width: 1200px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-row.add-new-row {
+    flex-direction: column;
+  }
+}
